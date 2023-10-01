@@ -1,0 +1,48 @@
+aside {
+  width: 70px;
+  min-width: 70px;
+  padding: 10px 0;
+
+  button.MuiButtonBase-root {
+    background-color: var(--grey);
+  }
+
+  button.MuiButtonBase-root:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  button.MuiButtonBase-root:hover {
+    background-color: var(--ligth-grey);
+  }
+}
+
+div.MuiPaper-root.MuiPopover-paper {
+  max-width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  div.MuiPaper-root.MuiPopover-paper {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h2#chat-header-title {
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2#chat-header-title {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h2#chat-header-title {
+    max-width: 150px;
+  }
+}
